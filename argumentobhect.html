@@ -1,0 +1,32 @@
+<html>
+<head><title>program</title>
+</head>
+<body>
+ <script>
+    function dis(name1,name2)
+     {
+	   arguments[0]="popat";
+	  document.write(name1);
+	   
+	  //document.write(arguments[0]+"<br>");
+	  document.write(arguments[1]);
+	  document.write("<br>");
+	  document.write(arguments.length);
+	 }
+    dis("dhanashri","chavan","hello");
+     document.write("<br>");
+    function display(name1,name2)
+     {
+	     for(var i=0;i< arguments.length;i++)
+		 {
+		   document.write(arguments[i]+" ");
+		  
+		 }
+		document.write("<br>"+arguments.callee);
+	 }
+	 display(12,"hello",14);
+
+
+ </script>
+</body>
+</html>
